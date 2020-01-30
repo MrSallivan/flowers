@@ -1,0 +1,55 @@
+@import "null.css"; /* обнуление */
+@import "font.css"; /* шрифты */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333333;
+}
+.body {
+    background: #FFFFFF;
+}
+.header {
+    max-width: 1920px;
+
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.header__logo {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+}
+.header__logo_redtext {
+    color: #FD7777;
+}
+.menu {
+    display: flex;
+    line-height: 21px;
+}
+.menu__tel {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.ico {
+    display: block;
+    width: 21px;
+    height: 21px;
+    margin-right: 7px;
+}
+.number {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    
+}
