@@ -15,6 +15,10 @@ body {
 }
 .header {
     max-width: 1920px;
+    background: url(../img/fl_bg_header.svg);
+    background-position: 80% 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
 
 }
 .container {
@@ -22,6 +26,7 @@ body {
     margin: 0 auto;
 }
 .header__logo {
+    padding-top: 75px;
     font-family: PT Serif;
     font-style: normal;
     font-weight: bold;
