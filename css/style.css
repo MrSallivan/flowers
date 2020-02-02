@@ -608,6 +608,7 @@ section {
 .qa__box {
     max-width: 928px;
     margin: 0 auto;
+    padding-bottom: 100px;
 }
 .qa__q {
     display: flex;
@@ -617,14 +618,24 @@ section {
     height: 50px;
     background: #FD7777;
     color: #fff;
-    
+    cursor: pointer;
 }
 .qa__q p {
     font-size: 18px;
 }
 .qa__a {
+    display: none;
     font-size: 16px;
     padding: 35px 0 60px 50px;
+}
+.qa__1.active,
+.qa__2.active2,
+.qa__3.active3
+ {
+    display: block;
+    font-size: 16px;
+    padding: 35px 0 60px 50px;
+    
 }
 .qa__strelka {
     margin-right: 21px;
