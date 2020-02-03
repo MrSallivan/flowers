@@ -367,6 +367,7 @@ section {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 .card__p {
     margin-right: 20px;
@@ -721,7 +722,7 @@ section {
 .reviews__contacts {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .contact__icons {
     display: flex;
@@ -841,6 +842,7 @@ section {
     .reviews__contacts {
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-bottom: 35px;
 
     }
     .reviews__contact {
@@ -853,19 +855,28 @@ section {
 }
 /* -------------------------------------FOOTER------------------------------- */
 .footer {
-    color: #fff;
-    background: url(../img/Leaves17.png) 50% 50% / 40% no-repeat;
+    position: relative;
+    color: #868686;
+    padding-top: 280px;
+    /* background: url(../img/Leaves17.png) 0 0% / 80% no-repeat; */
+}
+.footer__fon {
+   position: absolute;
+   bottom: 0;
+   left: 35%;
 }
 .footer__content {
     background-color: #302F2F;
-    height: 10vh;
 }
-.footer__empty {
-    background-color:#fff;
-    height: 10vh;
+.footer__master {
+    background-color: #000;
+}
+.footer__master2 {
+    display: flex;
+    justify-content: space-between;
 }
 .link_color {
-    color: #fff;
+    color: #868686;
 }
 .footer__wrap {
     height: 10vh;
@@ -876,6 +887,133 @@ section {
 .menu__item_margin {
     margin-right: 40px;
 }
+.footer__master2 .link {
+    display: block;
+}
+.footer__logo {
+    color: #fff;
+}
+.footer__logo_text {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+@media (max-width: 375px) {
+    .footer {
+        overflow: hidden;
+        padding-top: 50px;
+    }
+    .footer__fon {
+        display: block;
+        position: absolute; 
+        button:0;
+        top: 0;
+        left: 70%;
+        width: 50%;
+    }
+    .footer__fon img{
+        width: 80%;  
+        height: 100%;
+    }
+    
+    .footer__wrap {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__master2 {
+        background-color: #302F2F;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+    .footer__logo {
+        text-align: center; 
+        margin-top: 60px;
+    }
+    .footer__logo_text {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .footer__logo_text2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+/*--------------------------------------------------OVERLAY-----------------------------------*/
+.overlay {
+    position: fixed;
+    display: none;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background-color: rgba(0, 0, 0, .4);
+    overflow: scroll;
+}
+.overlay__card {
+    margin: 0 auto;
+    margin-top: 200px;
+    max-width: 930px;
+    max-height: 730px;
+    background-color: #fff; 
+    overflow-x: hidden;
+}
+.overlay__wrap {
+    display: flex;
+}
+.overlay__content {
+    position: relative;
+    padding-left: 60px;
+   
+}
+.overlay__close {
+    position: absolute;
+    top: 2%;
+    left: 23vw;
+    cursor: pointer;
+}
+.overlay__p1 {
+    font-family:'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 20px;
+    margin-bottom: 59px;
+}
+.overlay__h3::after {
+    content: "";
+    width: 290px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+}
+.overlay__h3 {
+    position: relative;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
 
 
 
