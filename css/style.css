@@ -979,6 +979,7 @@ section {
 .overlay__content {
     position: relative;
     padding-left: 60px;
+    padding-top: 150px;
    
 }
 .overlay__close {
@@ -1000,7 +1001,7 @@ section {
     content: "";
     width: 290px;
     height: 1px;
-    background-color: #333;
+    background-color: #C4C4C4;
     position: absolute;
     left: 0px;
     top: 40px;
@@ -1013,7 +1014,32 @@ section {
     font-size: 24px;
     line-height: 32px;
 }
-
+.overlay__h4 {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 26px;
+}
+.overlay__h4::after {
+    content: "";
+    width: 222px;
+    height: 1px;
+    background-color: #C4C4C4;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+}
+.overlay__p2 {
+    margin-bottom: 100px;
+}
+.overlay__buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 
