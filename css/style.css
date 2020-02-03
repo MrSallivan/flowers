@@ -909,7 +909,7 @@ section {
     .footer__fon {
         display: block;
         position: absolute; 
-        button:0;
+        bottom:0;
         top: 0;
         left: 70%;
         width: 50%;
@@ -980,7 +980,6 @@ section {
     position: relative;
     padding-left: 60px;
     padding-top: 150px;
-   
 }
 .overlay__close {
     position: absolute;
@@ -1040,7 +1039,83 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-
+@media (max-width: 375px) {
+    .overlay__card {
+        margin: 0 auto;
+        margin-top: 50px;
+        max-width: 330px;
+        max-height: 680px;
+        background-color: #fff;
+        overflow-x: hidden;
+    }
+    .overlay__wrap {
+        flex-direction: column;
+    }
+    .overlay__img img {
+        display: none;
+    }
+    .overlay__img {
+        width: 260px;
+        height: 260px;
+        background: url(../img/Photo260260.png);
+        margin: 45px 35px 25px 35px;
+    }
+    .overlay__content {
+        position: relative;
+        padding-left: 35px;
+        padding-top: 0px;
+    }
+    .overlay__close {
+        position: absolute;
+        top: -68%;
+        left: 80vw;
+        cursor: pointer;
+    }
+    .overlay__h3::after {
+        width: 260px;
+        text-outline: 35px;
+    }
+    .overlay__h3 {
+        font-size: 16px;
+    }
+    .overlay__p1 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+    .overlay__h4 {
+        position: relative;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 31px;
+    }
+    .overlay__h4::after {
+        width: 100px;
+    }
+    .overlay__p2 {
+        margin-bottom: 22px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .vol_num_mar {
+        margin: 0 5px;
+    }
+    .overlay__buy {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+}
 
 
 
