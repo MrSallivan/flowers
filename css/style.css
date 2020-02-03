@@ -386,6 +386,7 @@ section {
     border-radius: 50%;
     color:#FD7777;
     text-align: center;
+    cursor: pointer;
 }
 .vol__plus {
     display: flex;
@@ -397,6 +398,7 @@ section {
     border-radius: 50%;
     color: #FD7777;
     text-align: center;
+    cursor: pointer;
 }
 .vol_num {
     margin: 0 10px;
@@ -535,21 +537,21 @@ section {
     }
     .catalog__h3::before {
         content: "";
-        width: 100px;
+        width: 50px;
         height: 1px;
         background: #333333;
         position: absolute;
-        left: -100px;
+        left: -50px;
         top: 16px;
     }
 
     .catalog__h3::after {
         content: "";
-        width: 100px;
+        width: 50px;
         height: 1px;
         background: #333333;
         position: absolute;
-        right: -100px;
+        right: -50px;
         top: 16px;
     }
     .card__name {
@@ -627,6 +629,7 @@ section {
     display: none;
     font-size: 16px;
     padding: 35px 0 60px 50px;
+    transition: display 2s;
 }
 .qa__1.active,
 .qa__2.active2,
@@ -641,4 +644,306 @@ section {
     margin-right: 21px;
     display: flex;
     align-items: center;
+    transition: 1s;
 }
+.qa__strelka1.active,
+.qa__strelka2.active2,
+.qa__strelka3.active3 {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+@media (max-width: 375px) {
+    .qa_a {
+        transition: display 2s;
+    }
+    .qa__1.active,
+    .qa__2.active2,
+    .qa__3.active3 {
+        display: block;
+        font-size: 16px;
+        padding: 35px 50px 60px 50px;
+    }
+    .qa__h3 {
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 50px;
+        padding-top: 60px;
+        position: relative;
+        font-family: 'PT Serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .qa__h3::before {
+        content: "";
+        width: 116px;
+        height: 1px;
+        background: #333333;
+        position: absolute;
+        left: 35%;
+        top: 110%;
+    }
+}
+/* -------------------------------------REVIEWS------------------------------- */
+.reviews__h3 {
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 75px;
+    position: relative;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reviews__h3_margin {
+
+    margin-bottom: 70px;
+}
+.slider__review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.slider_review_last {
+    margin-bottom: 0;
+}
+.slider__img {
+    margin-right: 49px;
+}
+.reviews__contacts {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.contact__icons {
+    display: flex;
+    justify-content: flex-start;
+}
+.contact__icon {
+    margin-right: 20px;
+}
+.reviews_contact_color {
+    color: #868686;
+    margin-bottom: 25px;
+}
+.reviews_contact_text {
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+}
+.contact__icons a.link {
+    display: block;
+}
+.reviews {
+    padding-top: 120px;
+    background: url(../img/Plant09.png) 0 50% / 35% no-repeat,
+                url(../img/Plant04.png) 112% -50% / 35% no-repeat,
+                url(../img/Plant06.png) 100% 115% / 35% no-repeat;
+    padding-bottom: 0px;
+}
+/* -------------------------------------REVIEWS-SLIDER------------------------------- */
+.reviews__h31 {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    position: relative;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.slider {
+    position: relative;
+    max-width: 770px;
+    margin: 0 auto;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0; 
+    width: 10px;
+    height: 18px;
+}
+.slider .slick-arrow.slick-prev {
+    left: -60px;
+    background: url(../img/ls.svg) 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next {
+    right: -60px;
+    background: url(../img/rs.svg) 0 0 / 100% no-repeat;
+
+}
+@media (max-width: 375px) {
+    .reviews {
+        padding-top: 60px;
+        background: url(../img/Plant09.png) -100% 0% / 80% no-repeat;
+        padding-bottom: 0;
+    }
+    .reviews__h31 {
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    .reviews__h31::before {
+        content: "";
+        width: 50px;
+        height: 1px;
+        background: #333333;
+        position: absolute;
+        left: -50px;
+        top: 16px;
+    }
+    .reviews__h3{
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .reviews__h31::after {
+        content: "";
+        width: 50px;
+        height: 1px;
+        background: #333333;
+        position: absolute;
+        right: -50px;
+        top: 16px;
+    }
+    .slider {
+        max-width: 375px;
+    }
+    .slider__review_none {
+        display: none;
+    }
+    .slider__review {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .slider .slick-arrow.slick-prev {
+        left: 0;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right: 0;
+    }
+    .reviews__contacts {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+    .reviews__contact {
+        flex-basis: 45%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 50px;
+
+    }
+}
+/* -------------------------------------FOOTER------------------------------- */
+.footer {
+    color: #fff;
+    background: url(../img/Leaves17.png) 50% 50% / 40% no-repeat;
+}
+.footer__content {
+    background-color: #302F2F;
+    height: 10vh;
+}
+.footer__empty {
+    background-color:#fff;
+    height: 10vh;
+}
+.link_color {
+    color: #fff;
+}
+.footer__wrap {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu__item_margin {
+    margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Слайдер */ 
+ .slick-slider {}
+
+ /* Слайдер запущен */
+ .slick-slider.slick-initialized {}
+
+ /* Слайдер с точками */
+ .slick-slider.slick-dotted {}
+
+ /* Ограничивающая оболочка */
+ .slick-list {
+     overflow: hidden;
+ }
+
+ /* Лента слайдов */
+ .slick-track {
+     display: flex;
+ }
+ /* Слайд */
+ .slick-slide {}
+
+ /* Слайд активный (показывается) */
+ .slick-slide.slick-active {}
+
+ /* Слайд основной */
+ .slick-slide.slick-current {}
+
+ /* Слайд по центру */
+ .slick-slide.slick-center {}
+
+ /* Клонированный слайд */
+ .slick-slide.slick-cloned {}
+
+ /* Стрелка */
+ .slick-arrow {}
+
+ /* Стрелка влево */
+ .slick-arrow.slick-prev {}
+
+ /* Стрелка вправо */
+ .slick-arrow.slick-next {}
+
+ /* Стрелка не активная */
+ .slick-arrow.slick-disabled {}
+
+ /* Точки (булиты) */
+ .slick-dots {}
+
+ .slick-dots li {}
+
+ /* Активная точка */
+ .slick-dots li.slick-active {}
+
+ /* Элемент точки */
+ .slick-dots li button {}
