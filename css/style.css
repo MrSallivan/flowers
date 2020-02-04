@@ -195,6 +195,9 @@ section {
     line-height: 57px;
     margin: -210px 0 0 84px;
 }
+.hidden {
+    display: none;
+}
 @media (max-width: 375px){
     .header-top {
         position: relative;
@@ -203,11 +206,8 @@ section {
         background: url(../img/photo_bg.png);
         background-size:cover;
         background-repeat: no-repeat;
+      
     }
-    .header-top__bg-flower {
-        
-    }
-
     h1 {
         font-family: 'PT Serif';
         font-style: normal;
@@ -216,15 +216,17 @@ section {
         line-height: 1em;
         margin: -98px 0 0 23px;
     }
-    .header-top__bgbottom img{
+    .header-top__bgbottom {
        height: 100px;
+       background:url(../img/fl_bg_header.svg) 130% 100% / 44% no-repeat;
     }
-    .header-top__bgbottom  {
-        position: absolute; 
+   
+    /* .header-top__bgbottom  {
+        position: fixed; 
         top: 200px;
-        right: -80px;
-        
-    }
+        right: -50px; 
+        z-index: 500;
+    } */
 
 }
 /* -------------------------------------ABOUT-------------------------------------------------------------------------- */

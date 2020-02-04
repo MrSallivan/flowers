@@ -1,8 +1,12 @@
 $(document).ready(function(){
-    /* отзывы */
+    
     $('.header__toggle').click(function (event) {
         $('.header__toggle, .header__menu, .body').toggleClass('active');
     });
+    $('#1, #2, #3, #4').click(function (event) {
+        $('.header__toggle, .header__menu, .body').toggleClass('active');
+    });
+    /* отзывы */
     $('.qa__one').click(function (event) {
         $('.qa__1, .qa__strelka1').toggleClass('active');
     });
