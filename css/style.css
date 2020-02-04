@@ -126,7 +126,7 @@ section {
    
     .header__menu {
         flex-direction: column;
-        position: fixed;
+        position: absolute;
         top: 88px;
         left:-100%;
         width: 50%;
@@ -956,7 +956,8 @@ section {
 }
 /*--------------------------------------------------OVERLAY-----------------------------------*/
 .overlay,
-.overlay2 {
+.overlay2,
+.overlay3 {
     position: fixed;
     display: none;
     top:0;
@@ -1146,8 +1147,8 @@ section {
 }
 .basket__close {
     position: absolute;
-    top: 3%;
-    left: 97%;
+    top: 5%;
+    left: 92%;
     cursor: pointer;
 }
 .basket {
@@ -1506,8 +1507,62 @@ input[name=persdata]:checked + label:before {
         margin-bottom: 20px;
     }
 }
+/*--------------------------------------------------OVERLAY3-----------------------------------*/
+.overlaypersdata {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 493px;
+    max-height: 610px;
+    background-color: #fff; 
+    overflow-x: hidden;
+    position: relative;
+}
+.overlaydata {
+    margin: 80px 85px;
+}
+.overlaydata__close {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 92%;
+}
+.overlaydata__text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.overlaydata__h3 {
+    position: relative;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+.overlaydata__h3::after {
+    position: absolute;
+    content: "";
+    width: 322px;
+    height: 1px;
+    background-color: #C4C4C4;
+    left: 0px;
+    top: 32px;
+}
 
 
+
+form p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+}
 
 
 

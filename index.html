@@ -26,10 +26,10 @@
                      <a href="tel:88002223322" class="number link" type="phone">8-800-222-33-22</a>
                 </div>
                 <nav class="header__menu menu">
-                    <div class="menu__item"><a href="#" class="link">О нас</a></div>
-                    <div class="menu__item"><a href="#" class="link">каталог</a></div>
-                    <div class="menu__item"><a href="#" class="link">faq</a></div>
-                    <div class="menu__item menu__item_last"><a href="#" class="link">отзывы</a></div>
+                    <div class="menu__item"><a href="#about" class="link">О нас</a></div>
+                    <div class="menu__item"><a href="#catalog" class="link">каталог</a></div>
+                    <div class="menu__item"><a href="#faq" class="link">faq</a></div>
+                    <div class="menu__item menu__item_last"><a href="#rev" class="link">отзывы</a></div>
                 </nav>
                 <div class="header__basket">
                     <div class="icobasketwrap">
@@ -38,8 +38,7 @@
                     </div>
                     <a href="#" class="link link_hidden">корзина</a>
                 </div>
-            </div>  
-            
+            </div>    
         </div>
     </section>
     <section class="header-top">
@@ -49,7 +48,7 @@
         </div>
         <div class="header-top__bgbottom"></div>
     </section>
-    <section class="about">
+    <section class="about" id=about>
         <div class="container">
             <div class="about__wrap">
                 <div class="about__block1">
@@ -98,7 +97,7 @@
             </div>
         </div>
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
         <div class="container">
             <h3 class="catalog__h3">каталог</h3>
             <div class="catalog__wrap">
@@ -300,7 +299,7 @@
             </a>
         </div>
     </section>
-    <section class="qa">
+    <section class="qa" id="faq">
         <div class="container">
             <h3 class="qa__h3">часто задаваемые вопросы</h3>
             <div class="qa__box">
@@ -340,7 +339,7 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section class="reviews" id="rev">
         <div class="container">
             <div class="reviews__wrap">
                 <h3 class="reviews__h31 reviews__h31_margin ">отзывы</h3>
@@ -626,6 +625,29 @@
                         <label for="check1">Я соглашаюсь с условиями<br> обработки персональных данных</label>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay3">
+        <div class="overlaypersdata">
+            <div class="overlaydata">
+                <div class="overlaydata__close"><img src="img/close.png" alt="krest"></div>
+                <h3 class="overlaydata__h3">Личные данные</h3>
+                <p class="overlaydata__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor excepturi tenetur sunt dicta ea porro? Alias, libero saepe rerum quaerat voluptas eaque illo ipsam obcaecati facilis, quos excepturi accusamus. Voluptates!</p>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div>
+                        <p>Имя</p>
+                        <input placeholder="Имя" tabindex="1" name="username" type="text" />
+                    </div>
+                    <div>
+                        <p>Адрес</p>
+                        <input tabindex="2" name="userpass" type="text" />
+                    </div>
+                    <div>
+                        <p>Номер телефона</p>
+                        <input tabindex="3" name="userphone" type="tel" />
+                    </div>
+                </form>
             </div>
         </div>
     </div>

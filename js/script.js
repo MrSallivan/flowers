@@ -29,5 +29,15 @@ $(document).ready(function(){
     $('.basket__close').click(function (event) {
         $('.overlay2').hide();
     }); 
-    
+    /*persdata*/
+    $('.paytotal__next').click(function (event) {
+        $('.overlay3').show();
+    }); 
+    $('.overlaydata__close').click(function (event) {
+        $('.overlay3').hide();
+    }); 
+
+
+
+
 });
