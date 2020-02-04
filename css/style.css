@@ -789,6 +789,46 @@ section {
     background: url(../img/rs.svg) 0 0 / 100% no-repeat;
 
 }
+/* Точки (булиты) */
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.slider .slick-dots li {
+    list-style: none;
+}
+
+/* Активная точка */
+.slider .slick-dots li.slick-active {
+    font-size: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #FD7777;
+    margin: 70px 15px 0 15px;
+}
+
+/* Элемент точки */
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #C4C4C;
+    margin: 70px 15px 0 15px;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+}
+
 @media (max-width: 375px) {
     .reviews {
         padding-top: 60px;
@@ -797,7 +837,7 @@ section {
     }
     .reviews__h31 {
         margin-top: 0px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
     .reviews__h31::before {
         content: "";
@@ -824,21 +864,33 @@ section {
     .slider {
         max-width: 375px;
     }
-    .slider__review_none {
+    .slider__item {
+        margin: 20px 40px;
+        margin-bottom: 0;
+    }
+    .slider__img {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .slider__review.slider__review_none {
         display: none;
     }
     .slider__review {
         display: flex;
-        align-items: center;
         flex-direction: column;
-        margin-bottom: 50px;
+        align-content: center;
+        align-items: center;
+        margin-bottom: 0px;
     }
     .slider .slick-arrow.slick-prev {
         left: 0;
     }
-
+    
     .slider .slick-arrow.slick-next {
         right: 0;
+    }
+    .slider .slick-dots {
+        height: 5px;
     }
     .reviews__contacts {
         flex-wrap: wrap;
@@ -851,6 +903,16 @@ section {
         margin: 0;
         padding: 0;
         margin-bottom: 50px;
+
+    }
+    .slider .slick-arrow.slick-prev {
+        left: 10px;
+        background: url(../img/ls.svg) 0 0 / 100% no-repeat;
+    }
+
+    .slider .slick-arrow.slick-next {
+        right: 10px;
+        background: url(../img/rs.svg) 0 0 / 100% no-repeat;
 
     }
 }
@@ -1054,6 +1116,7 @@ section {
     .overlay__card {
         margin: 0 auto;
         margin-top: 50px;
+        margin-bottom: 50px;
         max-width: 330px;
         max-height: 680px;
         background-color: #fff;
@@ -1410,7 +1473,7 @@ input[name=persdata]:checked + label:before {
         position: absolute;
         left: 82%;
         top: 10%;
-        width: 80px;
+        width: 120px;
         font-family: Roboto;
         font-style: normal;
         font-weight: 300;
@@ -1434,6 +1497,7 @@ input[name=persdata]:checked + label:before {
         font-weight: bold;
         font-size: 18px;
         line-height: 21px;
+        margin-right: 50px;
     }
     .basket__item_close {
         margin-left: 50px;
@@ -1513,7 +1577,7 @@ input[name=persdata]:checked + label:before {
     margin-top: 100px;
     margin-bottom: 50px;
     max-width: 493px;
-    max-height: 610px;
+    max-height: 680px;
     background-color: #fff; 
     overflow-x: hidden;
     position: relative;
@@ -1553,15 +1617,44 @@ input[name=persdata]:checked + label:before {
     left: 0px;
     top: 32px;
 }
-
-
-
 form p {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 10px;
+}
+form input {
+    margin-bottom: 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+    width: 100%;
+    height: 37px;
+    padding-left: 15px;
+}
+form button {
+    display:block;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+}
+@media (max-width: 375px) {
+    .overlaypersdata {
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        max-width: 330px;
+        max-height: 606px;
+        background-color: #fff;
+        overflow-x: hidden;
+        position: relative;
+    }
+    .overlaydata {
+        margin: 45px 20px;
+    }
+
 }
 
 
@@ -1577,15 +1670,7 @@ form p {
  /* Слайдер с точками */
  .slick-slider.slick-dotted {}
 
- /* Ограничивающая оболочка */
- .slick-list {
-     overflow: hidden;
- }
-
- /* Лента слайдов */
- .slick-track {
-     display: flex;
- }
+ 
  /* Слайд */
  .slick-slide {}
 

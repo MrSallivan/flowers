@@ -13,7 +13,9 @@ $(document).ready(function(){
         $('.qa__3, .qa__strelka3').toggleClass('active3');
     });
     /* слайдер */
-    $('.slider').slick();
+    $('.slider').slick({
+        dots: true
+    });
 
     /* Модальные окна */
     $('.card__img').click(function (event) {
