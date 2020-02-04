@@ -22,5 +22,12 @@ $(document).ready(function(){
     $('.overlay__close').click(function (event) {
         $('.overlay').hide();
     }); 
+    /*basket*/
+    $('.header__basket').click(function (event) {
+        $('.overlay2').show();
+    }); 
+    $('.basket__close').click(function (event) {
+        $('.overlay2').hide();
+    }); 
     
 });
