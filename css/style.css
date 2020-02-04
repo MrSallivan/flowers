@@ -1139,7 +1139,7 @@ section {
     margin-top: 100px;
     margin-bottom: 50px;
     max-width: 962px;
-    max-height: 1160px;
+    max-height: 1170px;
     background-color: #fff; 
     overflow-x: hidden;
     position: relative;
@@ -1345,6 +1345,9 @@ section {
     color: #fff;
     background-color: #FD7777;
 }
+.basket__item_close {
+    cursor: pointer;
+}
 input[name=persdata] {
     display: none;
 }
@@ -1375,7 +1378,134 @@ input[name=persdata]:checked + label:before {
 	text-align: center;
     line-height: 15px;
 }
-
+@media (max-width: 375px) {
+    .overlaybasket {
+        width: 330px;
+        height: 1040px;
+    }
+    .basket__h3 {
+        font-family: PT Serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    .basket {
+        margin: 25px 20px 60px;
+    }
+    .basket__close {
+        position: absolute;
+        top: 2%;
+        left: 90%;
+        cursor: pointer;
+    }
+    .basket__item1,
+    .basket__item2 {
+        position: relative;
+    }
+    .basket__name {
+        position: absolute;
+        left: 82%;
+        top: 10%;
+        width: 80px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .basket__item {
+        justify-content: flex-start;
+    }
+    .basket__item2 {
+        margin-left: 10px;
+    }
+    .vol__bask {
+        position: absolute;
+        left: 1%;
+        top: 30px;
+    }
+    .item2__p1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .basket__item_close {
+        margin-left: 50px;
+    }
+    .basket__item::after {
+        content: "";
+        width: 290px;
+        height: 1px;
+        background-color: #C4C4C4;
+        position: absolute;
+        left: 0;
+        top: 119px;
+    }
+    .paymethod__h3 {
+        margin-top: 45px;
+       margin-bottom: 30px;
+    }
+    .paymethod1,
+    .paymethod2,
+    .paymethod3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+        flex: 0 0 33.3%;
+    }
+    .paydeliv1,
+    .paydeliv2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+    }
+    .paydeliv__h3 {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+    .paydeliv {
+        margin-bottom: 45px;
+    }
+    .paytotal {
+        flex-direction: column;
+    }
+    .paytotal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .paytotal__coast {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .paytotal__h6::after {
+        width: 290px;
+        top: 25px;
+    }
+    .paytotal__next {
+        margin-right: 0;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+}
 
 
 
