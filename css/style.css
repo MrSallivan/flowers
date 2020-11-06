@@ -159,7 +159,7 @@ section {
         display: flex;
         align-items: center;
     }
-    .header__container__mobile {
+    .header__container_mobile {
         display: flex;
         justify-content: space-between;
         align-content: flex-end;
@@ -374,17 +374,24 @@ section {
     align-content: center;
 }
 .vol__minus {
-    display: flex;
-    justify-content: space-around;
+	 display: flex;
+	 justify-content: center;
     align-items: center;
     width: 18px;
     height: 18px;
     border: 1px solid #FD7777;
     border-radius: 50%;
     color:#FD7777;
-    text-align: center;
-    cursor: pointer;
+	 cursor: pointer;
+	 text-align: center;
 }
+.vol_minus_centr {
+	display: block;
+	height: 1px;
+	width: 7px;
+	background-color: #FD7777;
+}
+
 .vol__plus {
     display: flex;
     justify-content: space-around;
@@ -436,15 +443,32 @@ section {
 .card__button-wrap:active {
     background: #C4C4C4;
 }
+.catalog__wrap {
+    
+    margin-bottom: 70px;
+}
 .catalog__wrap1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 70px;
 }
-.catalog__wrap2 {
+.catalog__wrap2,
+.catalog__wrap3,
+.catalog__wrap4,
+.catalog__wrap5 {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+}
+.catalog__wrap3,
+.catalog__wrap4,
+.catalog__wrap5 {
+	display: none;
+}
+.catalog__wrap3.active,
+.catalog__wrap4.active,
+.catalog__wrap5.active {
+	display: flex;
 }
 .catalog__button-all{
     margin: 0 auto;
@@ -501,18 +525,17 @@ section {
         margin-top: 35px;
         flex-basis: 45%;
     }
-    .catalog__wrap1 {
+	 .catalog__wrap1,
+	 .catalog__wrap2,
+	 .catalog__wrap3,
+	 .catalog__wrap4,
+	 .catalog__wrap5 {
         margin-top: 0;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    .catalog__wrap2 {
-        margin-top: 0;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+    
     
     .card__img {
         margin-bottom: 15px;
@@ -623,19 +646,19 @@ section {
     font-size: 18px;
 }
 .qa__a {
-    display: none;
+	 display: none;
     font-size: 16px;
     padding: 35px 0 60px 50px;
-    transition: display 2s;
+    transition: all 1s ease 0s;
 }
 .qa__1.active,
 .qa__2.active2,
 .qa__3.active3
  {
-    display: block;
+	 display: block;
     font-size: 16px;
     padding: 35px 0 60px 50px;
-    
+    transition: all 1s ease 0s;
 }
 .qa__strelka {
     margin-right: 21px;
@@ -802,7 +825,7 @@ section {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: #C4C4C;
+    background-color: #C4C4C4;
    
 }
 /* Активная точка */
@@ -1147,7 +1170,7 @@ section {
     }
     .overlay__h3::after {
         width: 260px;
-        text-outline: 35px;
+        /* text-outline: 35px; */
     }
     .overlay__h3 {
         font-size: 16px;
@@ -1661,50 +1684,5 @@ form button {
 
 
 
- /* Слайдер */ 
- .slick-slider {}
-
- /* Слайдер запущен */
- .slick-slider.slick-initialized {}
-
- /* Слайдер с точками */
- .slick-slider.slick-dotted {}
-
  
- /* Слайд */
- .slick-slide {}
-
- /* Слайд активный (показывается) */
- .slick-slide.slick-active {}
-
- /* Слайд основной */
- .slick-slide.slick-current {}
-
- /* Слайд по центру */
- .slick-slide.slick-center {}
-
- /* Клонированный слайд */
- .slick-slide.slick-cloned {}
-
- /* Стрелка */
- .slick-arrow {}
-
- /* Стрелка влево */
- .slick-arrow.slick-prev {}
-
- /* Стрелка вправо */
- .slick-arrow.slick-next {}
-
- /* Стрелка не активная */
- .slick-arrow.slick-disabled {}
-
- /* Точки (булиты) */
- .slick-dots {}
-
- .slick-dots li {}
-
- /* Активная точка */
- .slick-dots li.slick-active {}
-
- /* Элемент точки */
- .slick-dots li button {}
+ 

@@ -43,7 +43,19 @@ $(document).ready(function(){
         $('.overlay3').hide();
     }); 
 
-
-
+	var countClicks = 0
+	document.querySelector('.catalog__button-all').addEventListener('click', function () {
+		countClicks++
+		// let catalogWrap = document.querySelector('.catalog__wrap')
+		let divCount = $('.catalog__wrap').children('div').length;
+		let numberWrap = countClicks + 2
+		let div
+		if (numberWrap < divCount) {
+		 	document.querySelector(`.catalog__wrap${numberWrap}`).classList.add('active')
+		} else if (numberWrap == divCount) {
+			document.querySelector(`.catalog__wrap${numberWrap}`).classList.add('active')
+			document.querySelector(`.catalog__button-all`).style.display = 'none'
+		}
+	})
 
 });
